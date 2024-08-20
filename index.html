@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayow's 50/50 Adventure</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jayow's 50/50 Adventure!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Jayow</a></li>
+                <li><a href="#challenge">The 50/50 Challenge</a></li>
+                <li><a href="#contact">Contact Jayow</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Jayow</h2>
+            <p>Meet Jayow, the person who can never seem to win a 50/50 chance! Whether it's choosing between two options or flipping a coin, Jayow always ends up on the losing side. Despite the odds, Jayow never gives up and always approaches life with a smile and a sense of humor.</p>
+        </section>
+
+        <section id="challenge">
+            <h2>The 50/50 Challenge</h2>
+            <p>Think you can beat Jayow's 50/50 odds? Try out our interactive challenge below. Will you fare better, or will you end up with the same luck as Jayow?</p>
+            <button onclick="startChallenge()">Take the 50/50 Challenge!</button>
+            <p id="result"></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Jayow</h2>
+            <p>If you'd like to share your own 50/50 stories or just say hello, feel free to reach out to Jayow!</p>
+            <p>Email: <a href="mailto:jayow@example.com">jayow@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jayow's 50/50 Adventure. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function startChallenge() {
+            const outcome = Math.random() < 0.5 ? 'You lost!' : 'You won!';
+            document.getElementById('result').innerText = outcome;
+        }
+    </script>
+</body>
+</html>
+
